@@ -95,6 +95,7 @@
 				"entity.name.tag.inline.any.html",
 				"entity.name.tag.script.html",
 				"entity.name.tag.style.html",
+				"entity.name.tag.other.html",
 				// .css
 				"support.constant.property-value.css",
 				// .php
@@ -258,7 +259,6 @@
 			"name": "#FF0000",
 			"scope": [
 				// .html
-				"entity.name.tag.other.html",
 				// .css
 				"entity.name.tag.css",
 				"entity.other.attribute-name.pseudo-class.css"
