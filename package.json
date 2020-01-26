@@ -1,0 +1,21 @@
+{
+    "name": "metallicBlue",
+    "displayName": "Metallic Blue",
+    "description": "Theme",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "metallicBlue",
+                "uiTheme": "vs-dark",
+                "path": "./themes/metallicBlue-color-theme.json"
+            }
+        ]
+    }
+}
