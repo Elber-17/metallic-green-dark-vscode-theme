@@ -13,6 +13,7 @@
 		"panel.border": "#26C1A3",
 		"sideBar.border": "#26C1A3",
 		"tab.border": "#26C1A3",
+		"editor.findMatchBorder": "#ff0000",
 		"statusBar.foreground": "#ffff",
 		"activityBar.background": "#000000",
 		"activityBar.foreground": "#30D6B5",
@@ -26,7 +27,7 @@
 		"editorLineNumber.foreground": "#CACACA",
 		"editor.selectionBackground": "#3B3B3B",
 		"editor.findMatchBackground": "#750000",
-		"editor.findMatchHighlightBackground": "#3B3B3B",
+		"editor.findMatchHighlightBackground": "#681261",
 		"button.background": "#26C1A3",
 		"editorBracketMatch.border": "#30D6B5",
 		"editor.wordHighlightBackground": "#292929",
@@ -71,22 +72,21 @@
 				"keyword.control.at-rule.import.css",
 				// .js
 				"storage.type.class.js",
-				"keyword.operator.assignment.js",
 				"storage.modifier.js",
 				"keyword.control.conditional.js",
 				"keyword.operator.comparison.js",
 				"meta.function-call.js",
 				"storage.type.js",
-				"keyword.operator.arithmetic.js",
 				"keyword.control.flow.js",
 				"storage.type.function.js",
 				"entity.name.type.js",
-				"keyword.operator.relational.js",
 				"keyword.control.import.js",
 				"keyword.control.from.js",
 				"keyword.control.export.js",
 				"keyword.control.default.js",
 				"support.class.builtin.js",
+				"keyword.control.loop.js",
+				"storage.type.property.js",
 				// .html
 				"entity.name.tag.html",
 				"punctuation.separator.key-value.html",
@@ -98,6 +98,8 @@
 				"entity.name.tag.other.html",
 				// .css
 				"support.constant.property-value.css",
+				"entity.other.attribute-name.class.css",
+				"entity.other.attribute-name.id.css",
 				// .php
 				"keyword.other.namespace.php",
 				"keyword.other.use.php",
@@ -108,10 +110,11 @@
 				"keyword.operator.key.php",
 				"meta.method-call.php",
 				"support.function.errorfunc.php"
+
 				// .json
 			],
 			"settings": {
-				"foreground": "#0056ac"
+				"foreground": "#2fffd5"
 			}
 		},
 		{
@@ -119,20 +122,16 @@
 			"scope": [
 				// .py
 				"string.quoted.single.python",
-				"punctuation.definition.string.end.python",
-				"punctuation.definition.string.begin.python",
 				"entity.name.function.decorator.python",
 				//.css
 				"string.quoted.single.css",
 				// .js
 				"string.quoted.double.js",
 				"string.quoted.single.js",
-				"keyword.operator.new.js",
 				// .html
 				"string.quoted.double.html",
 				"string.quoted.single.html",
 				// .css
-				"support.type.property-name.css",
 				// .php
 				"punctuation.separator.inheritance.php",
 				"string.quoted.single.php",
@@ -142,7 +141,7 @@
 				"support.type.property-name.json"
 			],
 			"settings": {
-				"foreground": "#41FFDB"
+				"foreground": "#31a3c0"
 			}
 		},
 		{
@@ -169,11 +168,23 @@
 			"scope": [
 				// .py
 				"constant.character.format.placeholder.other.python",
+				"punctuation.definition.string.end.python",
+				"punctuation.definition.string.begin.python",
 				// .js
 				"variable.other.object.js",
 				"punctuation.accessor.js",
+				"keyword.operator.assignment.js",
+				"keyword.operator.arithmetic.js",
+				"keyword.operator.relational.js",
+				"support.class.console.js",
+				"punctuation.separator.key-value.js",
+				"punctuation.definition.string.begin.js",
+				"punctuation.definition.string.end.js",
 				// .html
+				"punctuation.definition.string.begin.html",
+				"punctuation.definition.string.end.html",
 				// .css
+				"punctuation.definition.entity.css",
 				// .php
 				"punctuation.definition.arguments.begin.bracket.round.php",
 				"punctuation.definition.arguments.end.bracket.round.php",
@@ -197,7 +208,7 @@
 				"constant.language.python",
 				"constant.numeric.dec.python",
 				// .js
-				"constant.numeric.decimal.js",
+
 				"constant.language.boolean.true.js",
 				"constant.language.boolean.false.js",
 				// .html
@@ -219,24 +230,21 @@
 			"name": "#74ADFA italic",
 			"scope": [
 				// .py
-				"variable.language.special.self.python",
 				"support.function.magic.python",
 				"variable.language.special.cls.python",
 				// .js
-				"variable.language.this.js",
 				// .html
 				"entity.other.attribute-name.html",
 				"entity.other.attribute-name.id.html",
 				// .css
-				"entity.other.attribute-name.class.css",
-				"entity.other.attribute-name.id.css",
+
 				// .php
 				"storage.modifier.php",
 				"keyword.operator.class.php"
 				// .json
 			],
 			"settings": {
-				"foreground": "#74ADFA",
+				"foreground": "#8d74fa",
 				"fontStyle": "italic"
 			}
 		},
@@ -244,14 +252,20 @@
 			"name": "#74ADFA",
 			"scope": [
 				// .js
+				"constant.numeric.decimal.js",
 				"meta.object-literal.key.js",
+				"keyword.operator.new.js",
+				"variable.language.this.js",
 				//.css
 				"variable.css",
+				"support.type.property-name.css",
 				// .json
-				"string.quoted.double.json"
+				"string.quoted.double.json",
+				//.py
+				"variable.language.special.self.python"
 			],
 			"settings": {
-				"foreground": "#74ADFA"
+				"foreground": "#60a5ff"
 			}
 		},
 
@@ -261,11 +275,20 @@
 				// .html
 				// .css
 				"entity.name.tag.css",
-				"entity.other.attribute-name.pseudo-class.css"
+				"entity.other.attribute-name.pseudo-class.css",
+				"keyword.other.important.css"
 				// .json
 			],
 			"settings": {
 				"foreground": "#FF0000"
+			}
+		},
+
+		{
+			"name": "test",
+			"scope": [],
+			"settings": {
+				"foreground": "#60a5ff"
 			}
 		}
 	]
