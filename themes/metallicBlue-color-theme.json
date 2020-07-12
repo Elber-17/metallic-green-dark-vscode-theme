@@ -71,6 +71,8 @@
 				//.css
 				"keyword.control.at-rule.import.css",
 				// .js
+				"keyword.operator.expression.of.js",
+				"keyword.control.switch.js",
 				"storage.type.class.js",
 				"storage.modifier.js",
 				"keyword.control.conditional.js",
@@ -132,6 +134,9 @@
 				"string.quoted.double.html",
 				"string.quoted.single.html",
 				// .css
+				//scss
+				"string.quoted.single.scss",
+				"string.quoted.double.scss",
 				// .php
 				"punctuation.separator.inheritance.php",
 				"string.quoted.single.php",
@@ -185,6 +190,9 @@
 				"punctuation.definition.string.end.html",
 				// .css
 				"punctuation.definition.entity.css",
+				//scss
+				"punctuation.definition.string.end.scss",
+				"punctuation.definition.string.begin.scss",
 				// .php
 				"punctuation.definition.arguments.begin.bracket.round.php",
 				"punctuation.definition.arguments.end.bracket.round.php",
@@ -285,10 +293,11 @@
 		},
 
 		{
-			"name": "test",
-			"scope": [],
+			"name": "#ffffff bold",
+			"scope": ["variable.other.constant.js"],
 			"settings": {
-				"foreground": "#60a5ff"
+				"foreground": "#ffffff",
+				"fontStyle": "bold"
 			}
 		}
 	]
