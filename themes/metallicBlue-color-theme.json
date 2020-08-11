@@ -89,6 +89,15 @@
 				"support.class.builtin.js",
 				"keyword.control.loop.js",
 				"storage.type.property.js",
+				//.ts
+				"keyword.control.import.ts",
+				"keyword.control.from.ts",
+				"keyword.control.export.ts",
+				"storage.type.class.ts",
+				"keyword.control.flow.ts",
+				"variable.language.this.ts",
+				"storage.type.function.ts",
+				"meta.function-call.ts",
 				// .html
 				"entity.name.tag.html",
 				"punctuation.separator.key-value.html",
@@ -130,6 +139,8 @@
 				// .js
 				"string.quoted.double.js",
 				"string.quoted.single.js",
+				//.ts
+				"string.quoted.single.ts",
 				// .html
 				"string.quoted.double.html",
 				"string.quoted.single.html",
@@ -158,6 +169,8 @@
 				"entity.other.inherited-class.python",
 				// .js
 				"variable.parameter.js",
+				// .ts
+				"variable.parameter.ts",
 				// .html
 				// .css
 				// .php
@@ -298,6 +311,17 @@
 			"settings": {
 				"foreground": "#ffffff",
 				"fontStyle": "bold"
+			}
+		},
+
+		{
+			"name": "#eeffff",
+			"scope": [
+				"variable.other.object.ts",
+				"variable.other.object.property.ts"
+			],
+			"settings": {
+				"foreground": "#eeffff"
 			}
 		}
 	]
