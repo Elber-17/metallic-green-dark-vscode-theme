@@ -1,6 +1,6 @@
 {
-    "name": "metallicBlue",
-    "displayName": "Metallic Blue",
+    "name": "metallicGreenDark",
+    "displayName": "metallic Green Dark",
     "description": "Theme",
     "version": "1.0.0",
     "engines": {
@@ -12,9 +12,9 @@
     "contributes": {
         "themes": [
             {
-                "label": "metallicBlue",
+                "label": "metallicDark",
                 "uiTheme": "vs-dark",
-                "path": "./themes/metallicBlue-color-theme.json"
+                "path": "./themes/metallicGreenDark-color-theme.json"
             }
         ]
     }

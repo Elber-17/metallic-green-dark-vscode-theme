@@ -1,5 +1,5 @@
 {
-	"name": "metallicBlue",
+	"name": "metallicDark",
 	"type": "dark",
 	"colors": {
 		"statusBar.background": "#26C1A3",
@@ -21,7 +21,7 @@
 		"editorGroupHeader.tabsBackground": "#151515",
 		"editorGroupHeader.noTabsBackground": "#151515",
 		"editorGroup.emptyBackground": "#151515",
-		"minimap.findMatchHighlight": "#ff0000",
+		"minimap.findMatchHighlight": "#008cff",
 		"minimap.selectionHighlight": "#26C1A3",
 		"editorLineNumber.activeForeground": "#3b9b88",
 		"editorLineNumber.foreground": "#CACACA",
@@ -98,6 +98,7 @@
 				"variable.language.this.ts",
 				"storage.type.function.ts",
 				"meta.function-call.ts",
+				"storage.type.ts",
 				// .html
 				"entity.name.tag.html",
 				"punctuation.separator.key-value.html",
@@ -120,12 +121,23 @@
 				"keyword.operator.assignment.php",
 				"keyword.operator.key.php",
 				"meta.method-call.php",
-				"support.function.errorfunc.php"
-
+				"support.function.errorfunc.php",
 				// .json
+				// prisma
+				"storage.type.config.prisma",
+				"support.function.functional.prisma",
+				"storage.type.model.prisma",
+				"support.type.primitive.prisma"
 			],
 			"settings": {
 				"foreground": "#2fffd5"
+			}
+		},
+		{
+			"name": "#d3f18e",
+			"scope":["string.template.ts"],
+			"settings": {
+				"foreground": "#d3f18e"
 			}
 		},
 		{
@@ -141,6 +153,7 @@
 				"string.quoted.single.js",
 				//.ts
 				"string.quoted.single.ts",
+				"string.quoted.double.ts",
 				// .html
 				"string.quoted.double.html",
 				"string.quoted.single.html",
@@ -154,10 +167,21 @@
 				"string.quoted.double.php",
 				"punctuation.section.embedded.begin.php",
 				// .json
-				"support.type.property-name.json"
+				"support.type.property-name.json",
+				// .prisma
+				"string.quoted.double.start.prisma",
+				"string.quoted.double.end.prisma",
+				"string.quoted.double.prisma"
 			],
 			"settings": {
 				"foreground": "#31a3c0"
+			}
+		},
+		{
+			"name": "#41FFDB",
+			"scope": "",
+			"settings": {
+				
 			}
 		},
 		{
@@ -241,7 +265,9 @@
 				"constant.language.php",
 				"constant.numeric.decimal.php",
 				// .json
-				"constant.numeric.json"
+				"constant.numeric.json",
+				//prisma
+				"entity.name.function.attribute.prisma"
 			],
 			"settings": {
 				"foreground": "#B461E4"
